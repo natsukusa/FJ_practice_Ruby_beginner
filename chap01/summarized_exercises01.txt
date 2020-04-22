@@ -1,0 +1,15 @@
+# Chapter01 練習問題
+
+Q.1-1-1
+natsu@natsu-MBP13 chap01 % ruby -v 
+ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
+
+Q.1-1-2 ディレクトリ名は変更してあります。
+natsu@natsu-MBP13 chap01 % ls -l
+total 16
+-rw-r--r--  1 natsu  staff    9  4 22 14:36 hi.rb
+-rw-r--r--  1 natsu  staff    0  4 22 14:34 memo_trial01.rb
+-rw-r--r--  1 natsu  staff  144  4 22 14:43 summarized_exercises01.txt
+
+Q.1-1-2
+puts "hello"
