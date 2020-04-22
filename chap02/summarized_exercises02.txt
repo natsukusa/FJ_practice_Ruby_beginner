@@ -1,0 +1,66 @@
+# Chapter02 練習問題
+
+Q.2-1-1
+puts 2 + 3
+
+Q.2-1-2
+radius = 2
+pi = 3.14
+puts radius * radius * pi
+
+Q.2-2-3
+puts "Ruby"
+
+Q.2-2-4
+puts "abc" + "def"
+
+Q.2-2-5
+x = "123"
+y = "456"
+puts x.to_i + y.to_i
+
+Q.2-3-6
+order_coffee = 1
+order_espresso = 2
+
+coffee_price = 300
+espresso_price = 100
+
+puts "コーヒー：#{coffee_price}円"
+puts "合計：#{coffee_price * order_coffee + espresso_price * order_espresso}円"
+
+Q.2-3-7
+order_coffee = 1
+order_espresso = 2
+
+coffee_price = 400
+espresso_price = 100
+
+puts "コーヒー：#{coffee_price}円"
+puts "合計：#{coffee_price * order_coffee + espresso_price * order_espresso}円"
+
+Q.2-6-8  # 2-6 は誤植
+From: memo_trial02.rb @ line 3 :
+
+    1: total = 300 * 2
+    2: tax = total * 0.08
+ => 3: binding.irb
+    4: puts tax
+
+irb(main):001:0> p tax + total
+648.0
+=> 648.0
+irb(main):002:0> 
+
+Q.2-7-9  # 2-7 は誤植
+total = 300 * 2
+puts t
+
+# 実行時エラー
+Traceback (most recent call last):
+memo_trial02.rb:2:in `<main>': undefined local variable or method `t' for main:Object (NameError)
+
+# 修正後プログラム
+total = 300 * 2
+puts total
+
