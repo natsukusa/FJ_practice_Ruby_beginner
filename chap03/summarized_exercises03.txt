@@ -1,0 +1,68 @@
+# Chapter03 練習問題
+
+Q.3-1-1
+a = 2
+if a < 365
+  puts "aは365より小さいです"
+end
+
+Q.3-1-2
+a = 2
+if a == ( 1 + 1 )
+  puts "aは(1+1)と等しいです"
+end
+
+Q.3-2-3
+season = "春"
+if season != "夏"
+  puts "あんまんたべたい"
+end
+
+Q.3-2-4
+season = "夏"
+if season == "夏"
+  puts "かき氷たべたい"
+  puts "麦茶のみたい"
+end
+
+Q.3-3-5
+wallet = 100
+if wallet >= 120
+  puts "ジュースを買おう"
+else
+  puts "お金じゃ買えない幸せがたくさんあるんだ"
+end
+
+Q.3-4-6
+x = 200
+if x <= 0 || x >= 100
+  puts "範囲外です"
+end
+
+Q.3-4-7
+x = 0
+y = -1
+z = 1 
+if x > 0 || y > 0 || z > 0 
+  puts "正の数です"
+end
+
+Q.3-5-8
+season = "春"
+case season
+when "春"
+  puts "アイスを買っていこう！"
+when "夏"
+  puts "かき氷買ってこう！"
+else
+  puts "あんまん買ってこう！"
+end
+
+Q.3-6-9
+2.times do
+  puts "カフェラテ"
+  puts "モカ"
+  puts "モカ"
+end
+puts "フラペチーノ"
+
