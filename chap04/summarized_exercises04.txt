@@ -1,0 +1,56 @@
+# Chapter04 練習問題
+
+Q.4-1-1
+p [ "コーヒー", "カフェラテ" ]
+
+Q.4-2-2
+drinks = [ "コーヒー", "カフェラテ", "モカ" ]
+
+Q.4-2-3
+drinks = [ "コーヒー", "カフェラテ", "モカ" ]
+puts drinks[1]
+
+Q.4-2-4
+drinks = [ "コーヒー", "カフェラテ", "モカ" ]
+puts drinks[0]
+puts drinks[-1]
+
+Q.4-3-5
+drinks = [ "コーヒー", "カフェラテ" ]
+drinks.push("モカ")
+puts drinks
+
+Q.4-3-6
+numbers = [ 2, 3 ]
+numbers.unshift(1)
+p numbers
+
+Q.4-3-7
+numbers = [ 1, 2 ]
+new_numbers = numbers + [ 3, 4 ]
+p new_numbers
+
+Q.4-4-8
+menus= ["ティーラテ", "カフェラテ", "抹茶ラテ"]
+menus.each do |menu|
+  puts menu
+end
+
+Q.4-4-9
+menus= ["ティーラテ", "カフェラテ", "抹茶ラテ"]
+menus.each do |menu|
+  puts "#{menu}お願いします"
+end
+
+Q.4-4-10
+sum = 0
+[1, 2, 3].each do |n|
+  sum += n
+end
+puts sum
+
+Q.4-4-11
+menus= []
+menus.each do |menu|
+  puts menu
+end
