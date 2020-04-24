@@ -1,3 +1,50 @@
 # Chapter05 練習問題
 
 Q.5-1-1
+p ["コーヒー", "カフェラテ"].size
+
+Q.5-1-2
+p [1, 2, 3, 4, 5].sum
+
+Q.5-2-3
+p ["モカ", "カフェラテ", "モカ"].uniq
+
+Q.5-2-4
+ary = ["モカ", "カフェラテ", "モカ"]
+p ary.clear
+
+Q.5-3-5
+ary = ["カフェラテ", "モカ", "カプチーノ"]
+p ary.sample
+
+Q.5-3-6
+ary = ["大吉", "中吉", "末吉", "凶"]
+p ary.sample
+
+Q.5-4-7
+p [100, 50, 300].sort
+
+Q.5-4-8
+p [100, 50, 300].sort.reverse
+
+Q.5-4-9
+p "cba".reverse
+
+Q.5-5-10
+p ["100", "50", "300"].join(",")
+
+Q.5-5-11
+p "100,50,300".split(",")
+
+Q.5-6-12
+result = [1, 2, 3].map{|i| i*3}
+p result
+
+Q.5-6-13
+result = ["abc", "xyz"].map{|text| text.reverse}
+p result
+
+Q.5-6-14
+result = ["aya", "achi", "Tama"].map(&:downcase)
+p result.sort
+
