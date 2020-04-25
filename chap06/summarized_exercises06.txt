@@ -1,0 +1,66 @@
+# Chapter06 練習問題
+
+Q.6-1-1
+menu = {coffee: 300, cafe_late: 400}
+p menu[:cafe_late]
+
+Q.6-1-2
+menu = {"モカ" => "チョコレートシロップとミルク入り", "カフェラテ" => "ミルク入り"}
+p menu["モカ"]
+
+Q.6-2-3
+menu = {coffee: 300, cafe_late: 400}
+menu[:tea] = 300
+p menu
+
+Q.6-2-4
+menu = {coffee: 300, cafe_late: 400}
+menu.delete(:coffee)
+p menu
+
+Q.6-2-5
+menu = {coffee: 300, cafe_late: 400}
+if !menu[:tea]
+  puts "紅茶はありませんか？"
+end
+
+Q.6-2-6
+menu = {coffee: 300, cafe_late: 400}
+if menu[:cafe_late] < 500
+  puts "カフェラテください"
+end
+
+Q.6-2-7
+letters = "caffelatte".chars
+letters_uniq = letters.uniq
+result = {}
+letters_uniq.each do |letter|
+  result[letter] = letters.count(letter)
+end
+p result
+
+Q.6-3-8
+menu = {"コーヒー" => 300, "カフェラテ" => 400}
+menu.each do |key, value|
+  puts "#{key} - #{value}"
+end
+
+Q.6-3-9
+menu = {"コーヒー" => 300, "カフェラテ" => 400}
+menu.each do |key, value|
+  puts "#{key} - #{value}" if value > 350
+end
+
+Q.6-3-10
+menu = {}
+menu.each do |key, value|
+  puts "#{key} - #{value}"
+end
+
+Q.6-3-11
+menu = {"コーヒー" => 300, "カフェラテ" => 400}
+ary = []
+menu.each do |key, value|
+  ary << key
+end
+p ary
