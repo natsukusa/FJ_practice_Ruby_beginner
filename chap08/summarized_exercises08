@@ -1,3 +1,78 @@
 # Chapter08 練習問題
 
 Q.8-1-1
+p ({:coffee => 300, :caffe_latte => 400}).class
+
+Q.8-1-2
+p Hash.new
+
+Q.8-2-3
+class CafeLatte
+end
+cafe_latte = CafeLatte.new
+p cafe_latte.class
+
+Q.8-3-4
+class Item
+  def name
+    "チーズケーキ"
+  end
+end
+item = Item.new
+p item.name
+
+Q.8-4-5
+class Item
+  def name=(text)
+    @name = text
+  end
+  def name
+    @name
+  end
+end
+item = Item.new
+item.name = "チーズケーキ"
+p item.name
+
+Q.8-5-6
+class Item
+  def initialize
+    puts "商品を扱うオブジェクト"
+  end
+end
+item = Item.new
+
+Q.8-5-7
+class Item
+  def initialize(name)
+    @name = name
+  end
+  attr_reader :name
+end
+item1 = Item.new("マフィン")
+item2 = Item.new("スコーン")
+puts item1.name
+puts item2.name
+
+Q.8-6-8
+class Item
+  def self.todays_special
+    "ホワイトモカ"
+  end
+end
+puts Item.todays_special
+
+Q.8-7-9
+class Item
+  def name
+    @name
+  end
+  def name=(text)
+    @name = text
+  end
+end
+class Food < Item
+end
+food = Food.new
+food.name = "チーズケーキ"
+puts food.name
